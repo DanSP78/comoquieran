@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+                <form action="/actualizarAlumnos/{{alumnos._id}}" method="POST">
+                    <h4>Editar Alumno</h4>
+                    <div>
+                        <label for="nombre">Modificar nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre" value="{{alumnos.nombre}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="paterno">Modificar paterno</label>
+                        <input type="text" name="paterno" placeholder="Paterno" value="{{alumnos.paterno}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="materno">Modificar materno</label>
+                        <input type="text" name="materno" placeholder="Materno" value="{{alumnos.materno}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="fechaNacimiento">Modificar Nacimiento</label>
+                        <input type="date" name="fechaNacimiento" placeholder="Nacimiento"
+                            value="{{alumnos.fechaNacimiento}}" class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="sexo">Modificar Sexo</label>
+                        <select name="sexo" id="sexo" value="{{alumnos.sexo}}" class="form-control bg-dark text-white">
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="celular">Modificar celular</label>
+                        <input type="number" name="celular" placeholder="Celular" value="{{alumnos.celular}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="direccion">Modificar direccion</label>
+                        <input type="text" name="direccion" placeholder="Direccion" value="{{alumnos.direccion}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <button class="btn btn-primary">Actualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

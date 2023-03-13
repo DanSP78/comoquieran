@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white">
+                <h4>Editar Asignatura</h4>
+
+                <form action="/actualizarAsignaturas/{{asignaturas._id}}" method="POST">
+                    <div>
+                        <label for="nombre">Modificar nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre" value="{{asignaturas.nombre}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="celular">Modificar creditos</label>
+                        <input type="number" name="creditos" placeholder="Creditos" value="{{asignaturas.creditos}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <div>
+                        <label for="celular">Modificar horas</label>
+                        <input type="number" name="horas" placeholder="Horas" value="{{asignaturas.horas}}"
+                            class="form-control bg-dark text-white">
+                    </div>
+                    <button class="btn btn-primary">Actualizar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
