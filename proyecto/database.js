@@ -12,7 +12,7 @@ var _config = require("./config");
       case 0:
         _context.prev = 0;
         _context.next = 3;
-        return (0, _mongoose.connect)(_config.MONGODB_URI);
+        return (0, _mongoose.connect)(_config.MONGODB_ATLAS);
       case 3:
         db = _context.sent;
         console.log("Database connected to", db.connection.name);
