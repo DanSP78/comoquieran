@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": "14.x"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon proyecto/index.js --exec babel-node",
+    "start": "nodemon src/index.js --exec babel-node",
     "dev": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d proyecto && ncp src/views proyecto/views && ncp src/frontend proyecto/frontend"
 
